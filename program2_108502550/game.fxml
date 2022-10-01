@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handle" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program2_108502550.game">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="624.0" fitWidth="1037.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background3.jpg" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="162.0" prefHeight="600.0" prefWidth="738.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="0.1" prefHeight="0.1" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane fx:id="enemy2" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <children>
+                        <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gch5_2.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enblood2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <children>
+                        <Rectangle fx:id="enblood2_inv" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutX="-1.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood2_1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood2_2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="55.0" />
+                        <Rectangle fx:id="enblood2_3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutX="-2.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="30.0" />
+                        <Text fx:id="enblood_num2" fill="#efff69" layoutX="27.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300" visible="false">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enemy1" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fitHeight="78.0" fitWidth="168.0" layoutX="3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gch6_2.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enblood1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5">
+                     <children>
+                        <Rectangle fx:id="enblood1_inv" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood1_1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood1_2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="55.0" />
+                        <Rectangle fx:id="enblood1_3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutX="-1.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="30.0" />
+                        <Text fx:id="enblood_num1" fill="#efff69" layoutX="24.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300" visible="false">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enemy3" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <children>
+                        <ImageView fitHeight="73.0" fitWidth="83.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gch7_2.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enblood3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <children>
+                        <Rectangle fx:id="enblood3_inv" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood3_1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood3_2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="55.0" />
+                        <Rectangle fx:id="enblood3_3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutX="-1.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="30.0" />
+                        <Text fx:id="enblood_num3" fill="#efff69" layoutX="26.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300" visible="false">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="mainch" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                     <children>
+                        <ImageView fx:id="ch1" fitHeight="109.0" fitWidth="261.0" layoutX="-3.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch9.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ch2" fitHeight="109.0" fitWidth="82.0" layoutX="-3.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch11.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ch3" fitHeight="109.0" fitWidth="92.0" layoutX="-2.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch12.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ch4" fitHeight="109.0" fitWidth="92.0" layoutX="-9.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch13.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ch5" fitHeight="109.0" fitWidth="91.0" layoutX="-9.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch14.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ch6" fitHeight="109.0" fitWidth="89.0" layoutX="1.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch15.gif" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="ch7" fitHeight="109.0" fitWidth="89.0" layoutX="-2.0" layoutY="-42.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@gch16.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enemy4" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <children>
+                        <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="-1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gch8_2.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enblood4" prefHeight="51.0" prefWidth="82.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <children>
+                        <Rectangle fx:id="enblood4_inv" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood4_1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood4_2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="55.0" />
+                        <Rectangle fx:id="enblood4_3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutX="-2.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="30.0" />
+                        <Text fx:id="enblood_num4" fill="#efff69" layoutX="27.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300" visible="false">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enemy5" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <children>
+                        <ImageView fitHeight="73.0" fitWidth="83.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@gch10_2.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="enblood5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <children>
+                        <Rectangle fx:id="enblood5_inv" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood5_1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="82.0" />
+                        <Rectangle fx:id="enblood5_2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="55.0" />
+                        <Rectangle fx:id="enblood5_3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutX="-1.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="30.0" />
+                        <Text fx:id="enblood_num5" fill="#efff69" layoutX="26.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300" visible="false">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="bubble" prefHeight="80.0" prefWidth="80.0" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="38.0" layoutX="18.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bubble.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <Text fx:id="start_remind" fill="WHITE" layoutX="25.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press &quot;down&quot; to start">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <Line fx:id="boundary" endX="-1.3333892822265625" endY="450.99993896484375" layoutX="163.0" layoutY="148.0" startX="-1.3333892822265625" startY="-147.0" stroke="WHITE" strokeWidth="2.0" visible="false" />
+            <Text fx:id="Score_word" fill="WHITE" layoutX="25.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" visible="false">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="Score_num" fill="WHITE" layoutX="63.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" visible="false">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="time_num" fill="#ff8fec" layoutX="67.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="timeline_inv" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="240.0" layoutX="69.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="18.0" />
+            <Rectangle fx:id="timeline" arcHeight="5.0" arcWidth="5.0" fill="#73f054" height="240.0" layoutX="69.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="18.0" />
+            <Button fx:id="next_page" layoutX="9.0" layoutY="86.0" mnemonicParsing="false" onAction="#next_page_pressed" prefHeight="401.0" prefWidth="155.0" style="-fx-background-color: transparent;" text="Click&#10;here&#10;to&#10;continue" textAlignment="CENTER" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

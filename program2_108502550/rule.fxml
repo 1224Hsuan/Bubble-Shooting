@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program2_108502550.program2_108502550">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background2_2.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#fffa00" layoutX="73.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Rules :">
+               <font>
+                  <Font name="Edwardian Script ITC" size="48.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="140.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. 按&quot;向下&quot;鍵開始遊戲&#10;2. 遊戲人物會自動發射攻擊泡泡&#10;3. 按&quot;向左&quot;鍵將遊戲人物向左移&#10;4. 按&quot;向右&quot;鍵將遊戲人物向右移&#10;5. 遊戲時間為80秒&#10;6. 必須在時間內將所有敵人消除才算勝利">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Button fx:id="play" layoutX="449.0" layoutY="509.0" mnemonicParsing="false" onAction="#button_play_pressed" text="play" textFill="#7600ff" />
+            <Text fill="#f7b2ff" layoutX="74.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="請選擇遊戲人物">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fx:id="Warning" fill="#00ff4d" layoutX="271.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="需選擇遊戲人物才可開始遊戲 !" visible="false">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="ch_1" layoutX="49.0" layoutY="350.0" mnemonicParsing="false" onAction="#ch1_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch9.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ch_2" layoutX="176.0" layoutY="350.0" mnemonicParsing="false" onAction="#ch2_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch11.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ch_3" layoutX="303.0" layoutY="350.0" mnemonicParsing="false" onAction="#ch3_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch12.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ch_4" layoutX="419.0" layoutY="354.0" mnemonicParsing="false" onAction="#ch4_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch13.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ch_5" layoutX="535.0" layoutY="354.0" mnemonicParsing="false" onAction="#ch5_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch14.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ch_6" layoutX="659.0" layoutY="350.0" mnemonicParsing="false" onAction="#ch6_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch15.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ch_7" layoutX="777.0" layoutY="350.0" mnemonicParsing="false" onAction="#ch7_press" prefHeight="113.0" prefWidth="83.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="113.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@gch16.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

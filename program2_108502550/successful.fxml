@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program2_108502550.program2_108502550">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="635.0" fitWidth="968.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background4_5.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#6f00ff" layoutX="68.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations! You've successfully passed the game !">
+               <font>
+                  <Font name="Comic Sans MS" size="22.0" />
+               </font>
+            </Text>
+            <Button layoutX="68.0" layoutY="139.0" mnemonicParsing="false" onAction="#button_leave_press" prefHeight="49.0" prefWidth="317.0" style="-fx-background-color: transparent;" text="click here to leave" textFill="#0034ff">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
