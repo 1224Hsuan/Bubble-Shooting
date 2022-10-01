@@ -14,10 +14,12 @@ A game which was written with Java.
 <li> The enemy will disappear if his HP is 0.</li>
 <li> Enjoy the game!</li>
 </ol>
+
 * Score
-  * Hit the bottom-row enemy: get 100 points.
-  * Hit the middle-row enemy: get 200 points.
-  * Hit the top-row enemy: get 300 points.
+
+ * Hit the bottom-row enemy: get 100 points.
+ * Hit the middle-row enemy: get 200 points.
+ * Hit the top-row enemy: get 300 points.
   
 ## Operating Method
 * Run program2_108502550.java.
